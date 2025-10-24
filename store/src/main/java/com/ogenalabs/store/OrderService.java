@@ -13,7 +13,4 @@ public class OrderService {
     public void placeOrder(){
         paymentService.processPayment(10);
     }
-    public void setPaymentService(PaymentService paymentService){
-        this.paymentService = paymentService;
-    }
 }
