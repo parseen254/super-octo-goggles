@@ -5,7 +5,7 @@ import org.springframework.stereotype.Component;
 
 @Component
 public class NotificationManager {
-    private NotificationService notificationService;
+    private final NotificationService notificationService;
 
     public NotificationManager(@Qualifier("email") NotificationService notificationService){
         this.notificationService = notificationService;
